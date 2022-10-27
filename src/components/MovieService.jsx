@@ -46,9 +46,9 @@ function MovieService() {
                         <td>{movie.rating}</td>
                         <td>{movie.genre}</td>
                         <td>
-                            <button onClick={(e) => deleteMovie(movie.id,e)}>
-                                <img className="deleteImage" src="src/images/delete_icon.jpeg"/>
-                            </button>
+                            <input class = "deleteImage" type="image" src="src/images/delete-512.png" onClick={(e) => deleteMovie(movie.id,e)} >
+
+                            </input>
                         </td>
                     </tr>);
                 })}</tbody>
