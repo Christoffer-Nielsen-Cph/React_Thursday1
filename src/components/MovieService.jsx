@@ -30,7 +30,7 @@ function MovieService() {
     return (
         <>
             <AddMovie isChanged={setMoviesChanged} changed={moviesChanged}/>
-            <UpdateMovie />
+            <UpdateMovie isChanged={setMoviesChanged} changed={moviesChanged}/>
             {movies.length && <table className='movieTable'>
                 <thead>
                 <tr><th>Id</th><th>Title</th><th>Year</th><th>Rating</th><th>Genre</th><th>Delete</th></tr>

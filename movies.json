@@ -2,10 +2,10 @@
   "movies": [
     {
       "id": 5,
-      "title": "2",
-      "year": "2",
-      "rating": "2",
-      "genre": "2"
+      "title": "Anders",
+      "year": "2002",
+      "rating": "10",
+      "genre": "Horror"
     }
   ]
 }
