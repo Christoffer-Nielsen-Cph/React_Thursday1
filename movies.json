@@ -48,6 +48,13 @@
       "rating": "32131",
       "genre": "fsadfas",
       "id": 7
+    },
+    {
+      "title": "avatar",
+      "year": "2014",
+      "rating": "7.5",
+      "genre": "fiction",
+      "id": 8
     }
   ]
 }

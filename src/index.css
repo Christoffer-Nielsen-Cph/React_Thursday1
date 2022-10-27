@@ -18,7 +18,18 @@ a{
   width: 100%;
 }
 
-.movieTable tr:nth-child(even){background-color: #f2f2f2;}
+.hidden{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  display: none;
+
+}
+
+.movieTable tr:nth-child(even){background-color: #f2f2f2;
+width: 100%;
+}
 .movieTable tr:hover {background-color: #ddd;}
 .movieTable th{
   padding-top: 12px;
@@ -26,6 +37,7 @@ a{
   text-align: left;
   background-color: #04AA6D;
   color: white;
+
 }
 
 .inputNewMovie{
