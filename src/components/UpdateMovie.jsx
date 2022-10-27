@@ -37,19 +37,14 @@ const updateMovie = (props) => {
         <>
             <form onSubmit={handleSubmit}>
                 <label className='labelUpdateMovie'>id:</label>
-                <text>ID: </text>
                 <input className='inputUpdateMovie' type="Number" id="id" value={updatedMovie.id} onChange={update}/>
                 <label className='labelUpdateMovie'>Title:</label>
-                <text>Title: </text>
                 <input className='inputUpdateMovie' type="text" id="title" value={updatedMovie.title} onChange={update}/>
                 <label className='labelUpdateMovie'>Year:</label>
-                <text>Year: </text>
                 <input className='inputUpdateMovie'  type="text" id="year" value={updatedMovie.year} onChange={update}/>
                 <label className='labelUpdateMovie'>Rating:</label>
-                <text>Rating: </text>
                 <input className='inputUpdateMovie'  type="text" id="rating" value={updatedMovie.rating} onChange={update}/>
                 <label className='labelUpdateMovie'>Genre:</label>
-                <text>Genre: </text>
                 <input className='inputUpdateMovie'  type="text" id="genre" value={updatedMovie.genre} onChange={update}/>
                 <input type="submit" value="Update"/>
             </form>

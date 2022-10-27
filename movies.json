@@ -1,11 +1,11 @@
 {
   "movies": [
     {
-      "title": "test",
-      "year": "123",
-      "rating": "123",
-      "genre": "test",
-      "id": 2
+      "id": 2,
+      "title": "Anders",
+      "year": "2002",
+      "rating": "10",
+      "genre": "Horror"
     },
     {
       "title": "Star Wars",
