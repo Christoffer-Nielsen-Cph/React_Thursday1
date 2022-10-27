@@ -1,26 +1,11 @@
 {
   "movies": [
     {
-      "id": 1,
-      "title": "Terminator",
-      "year": 2017,
-      "rating": 7.8,
-      "adult": true,
-      "genre": "sci-fiction"
-    },
-    {
-      "title": "Jurassic",
-      "year": "2022",
-      "rating": "9",
-      "genre": "action",
-      "id": 2
-    },
-    {
-      "title": "Jurassic",
-      "year": "2022",
-      "rating": "9",
-      "genre": "action",
-      "id": 3
+      "title": "test",
+      "year": "123",
+      "rating": "123",
+      "genre": "test",
+      "id": 4
     },
     {
       "title": "Star Wars",
@@ -34,6 +19,10 @@
       "year": "1970",
       "rating": "8.0",
       "genre": "horror",
+      "title": "test",
+      "year": "123",
+      "rating": "123",
+      "genre": "test",
       "id": 5
     }
   ]
