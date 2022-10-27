@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import AddMovie from "./AddMovie.jsx";
-
+import UpdateMovie from "./UpdateMovie"
 function MovieService() {
     const [movies, setMovies] = useState([]);
     const [moviesChanged, setMoviesChanged] = useState(false);
@@ -16,6 +16,7 @@ function MovieService() {
     return (
         <>
             <AddMovie isChanged={setMoviesChanged} changed={moviesChanged}/>
+            <UpdateMovie />
             {movies.length && <table className='movieTable'>
                 <thead>
                 <tr><th>Id</th><th>Title</th><th>Year</th><th>Rating</th><th>Genre</th></tr>
