@@ -43,7 +43,7 @@ const updateMovie = (props) => {
 
     return (
         <>
-            <button onClick={()=>setHidden(s => !s)}>{btnText()}</button>
+            <button class= "button1" onClick={()=>setHidden(s => !s)}>{btnText()}</button>
             {!hidden ? <form onSubmit={handleSubmit}>
                 <label className='labelNewMovie'>Id:</label>
                 <input className='inputNewMovie' type="number" id="id" value={updatedMovie.id} onChange={update}/>
@@ -55,7 +55,7 @@ const updateMovie = (props) => {
                 <input className='inputNewMovie'  type="text" id="rating" value={updatedMovie.rating} onChange={update}/>
                 <label className='labelNewMovie'>Genre:</label>
                 <input className='inputNewMovie'  type="text" id="genre" value={updatedMovie.genre} onChange={update}/>
-                <input type="submit" value="Update"/>
+                <input class ="button1" type="submit" value="Update"/>
             </form> : null}
         </>
     );
