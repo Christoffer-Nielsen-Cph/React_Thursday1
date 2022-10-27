@@ -23,7 +23,7 @@ function MovieService() {
 
     useEffect(() => {
         const getData = async () => {
-            const response = await fetch('http://localhost:4000/movies');
+            const response = await fetch('http://localhost:3000/movies');
             const data = await response.json();
             setMovies(data);
         }
@@ -33,7 +33,7 @@ function MovieService() {
         <>
 
             <AddMovie isChanged={setMoviesChanged} changed={moviesChanged}/>
-
+            <UpdateMovie isChanged={setMoviesChanged} changed={moviesChanged}/>
             {movies.length && <table className='movieTable'>
                 <thead>
                 <tr><th>Id</th><th>Title</th><th>Year</th><th>Rating</th><th>Genre</th><th>Delete</th></tr>
