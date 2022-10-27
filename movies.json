@@ -28,6 +28,13 @@
       "rating": "10",
       "genre": "sci-fiction",
       "id": 4
+    },
+    {
+      "title": "Alien",
+      "year": "1970",
+      "rating": "8.0",
+      "genre": "horror",
+      "id": 5
     }
   ]
 }
