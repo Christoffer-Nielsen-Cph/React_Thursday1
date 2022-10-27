@@ -35,6 +35,7 @@ const updateMovie = (props) => {
             .then((data) => {
                 console.log('DATA:', data);
                 props.isChanged(!props.changed);
+                evt.target.reset();
             });
 
     }

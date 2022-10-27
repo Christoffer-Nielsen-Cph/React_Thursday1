@@ -3,6 +3,7 @@ import React, {useState} from "react";
 const AddMovie = (props) => {
     const [newMovie, setNewMovie] = useState({title:'',year:'',rating:'',genre:''});
     const [hidden,setHidden] = useState(true)
+
     const btnText = () => {
         if(hidden){
             return "Add movie"
@@ -10,6 +11,8 @@ const AddMovie = (props) => {
             return "Close"
         }
     }
+
+
     const update = (evt) => {
         const value = evt.target.value;
         const propertyName = evt.target.id;
@@ -25,10 +28,15 @@ const AddMovie = (props) => {
             },
             body: JSON.stringify(newMovie)
         })
-            .then((res) => res.json())
+            .then((res) =>{ res.json()
+                    setNewMovie(res)
+                }
+
+            )
             .then((data) => {
                 console.log('DATA:', data);
                 props.isChanged(!props.changed);
+                evt.target.reset();
             });
 
     }
