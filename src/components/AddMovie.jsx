@@ -14,7 +14,14 @@ const AddMovie = (props) => {
         const value = evt.target.value;
         const propertyName = evt.target.id;
         setNewMovie({...newMovie, [propertyName]: value});
+
+
+
+
+
     }
+
+
     const handleSubmit = (evt) => {
         evt.preventDefault();
         console.log(newMovie);
@@ -35,8 +42,9 @@ const AddMovie = (props) => {
 
     return (
         <>
-            <button onClick={()=>setHidden(s => !s)}>{btnText()}</button>
+            <button class="button1" onClick={()=>setHidden(s => !s)}>{btnText()}</button>
             {!hidden ? <form onSubmit={handleSubmit}>
+
                 <label className='labelNewMovie'>Title:</label>
                 <input className='inputNewMovie' type="text" id="title" value={newMovie.title} onChange={update}/>
                 <label className='labelNewMovie'>Year:</label>
@@ -45,7 +53,7 @@ const AddMovie = (props) => {
                 <input className='inputNewMovie'  type="number" id="rating" value={newMovie.rating} onChange={update}/>
                 <label className='labelNewMovie'>Genre:</label>
                 <input className='inputNewMovie'  type="text" id="genre" value={newMovie.genre} onChange={update}/>
-                <input type="submit" value="Add movie"/>
+                <input class="button1" type="submit" value="Add movie"/>
             </form> : null}
         </>
     );

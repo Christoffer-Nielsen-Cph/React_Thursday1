@@ -1,19 +1,43 @@
 .movieTable{
   border: 1px solid #ddd;
   padding: 8px;
-  font-family: Arial, Helvetica, sans-serif;
   border-collapse: collapse;
   width: 100%;
+  text-align: center;
+
 }
+.button1 {
+  background-color: #04AA6D; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 20px 0px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.button2 {
+  border: none;
+  border-radius: 4px;
+  width: 50px;
+  height: 50px;
+}
+
+
+
+
 
 .movieTable tr:nth-child(even){background-color: #f2f2f2;}
 .movieTable tr:hover {background-color: #ddd;}
 .movieTable th{
   padding-top: 12px;
   padding-bottom: 12px;
-  text-align: left;
+  text-align: center;
   background-color: #04AA6D;
   color: white;
+
 }
 
 .inputNewMovie{
@@ -21,21 +45,22 @@
   padding: 12px 20px;
   margin: 8px 0;
   box-sizing: border-box;
+  border-radius: 4px;
 }
 .labelNewMovie{
   color: black;
 }
 
 .deleteImage{
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  padding: 5px;
-  width: 35px;
+  border: none;
+  width: 40px;
+  height: 40px;
 }
 
 #root {
   justify-content: center; /* center items horizontally, in this case */
   align-items: center;     /* center items vertically, in this case */
+  font-family: Arial, Helvetica, sans-serif;
 
   padding: 150px;
 }
