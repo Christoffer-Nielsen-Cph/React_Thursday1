@@ -1,24 +1,30 @@
 import React, {useState, useEffect} from 'react';
 import AddMovie from "./AddMovie.jsx";
 const updateMovie = (props) => {
-    const [updatedMovie, setUpdatedMovie] = useState({});
+    const [updatedMovie, setUpdatedMovie] = useState({id:'',title:'',year:'',rating:'',genre:''});
 
     const update = (evt) => {
         const value = evt.target.value;
         const propertyName = evt.target.id;
         setUpdatedMovie({...updatedMovie, [propertyName]: value});
+        console.log(updatedMovie);
     }
     const handleSubmit = (evt) => {
         evt.preventDefault();
-        console.log();
-        fetch('http://localhost:4000/movies/id/'+updatedMovie.id, {
+        console.log(id);
+        fetch(`http://localhost:3000/movies/${id.value}`, {
             method: 'PUT', // or 'PUT'
             headers: {
+                'Accept': 'application/json',
                 'Content-Type': 'application/json',
             },
-            body: JSON.stringify()
+            body: JSON.stringify(updatedMovie)
         })
-            .then((res) => res.json())
+            .then((res) =>{ res.json()
+            setUpdatedMovie(res)
+            }
+            
+            )
             .then((data) => {
                 console.log('DATA:', data);
             });
@@ -30,7 +36,7 @@ const updateMovie = (props) => {
         <>
             <form onSubmit={handleSubmit}>
                 <label className='labelUpdateMovie'>id:</label>
-                <input className='inputUpdateMovie' type="text" id="id" value={updatedMovie.id} onChange={update}/>
+                <input className='inputUpdateMovie' type="Number" id="id" value={updatedMovie.id} onChange={update}/>
                 <label className='labelUpdateMovie'>Title:</label>
                 <input className='inputUpdateMovie' type="text" id="title" value={updatedMovie.title} onChange={update}/>
                 <label className='labelUpdateMovie'>Year:</label>
