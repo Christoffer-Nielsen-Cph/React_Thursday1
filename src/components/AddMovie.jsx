@@ -2,6 +2,14 @@ import React, {useState} from "react";
 
 const AddMovie = (props) => {
     const [newMovie, setNewMovie] = useState({title:'',year:'',rating:'',genre:''});
+    const [hidden,setHidden] = useState(true)
+    const btnText = () => {
+        if(hidden){
+            return "Add movie"
+        } else{
+            return "Close"
+        }
+    }
     const update = (evt) => {
         const value = evt.target.value;
         const propertyName = evt.target.id;
@@ -24,9 +32,11 @@ const AddMovie = (props) => {
             });
 
     }
+
     return (
         <>
-            <form onSubmit={handleSubmit}>
+            <button onClick={()=>setHidden(s => !s)}>{btnText()}</button>
+            {!hidden ? <form onSubmit={handleSubmit}>
                 <label className='labelNewMovie'>Title:</label>
                 <input className='inputNewMovie' type="text" id="title" value={newMovie.title} onChange={update}/>
                 <label className='labelNewMovie'>Year:</label>
@@ -36,7 +46,7 @@ const AddMovie = (props) => {
                 <label className='labelNewMovie'>Genre:</label>
                 <input className='inputNewMovie'  type="text" id="genre" value={newMovie.genre} onChange={update}/>
                 <input type="submit" value="Add movie"/>
-            </form>
+            </form> : null}
         </>
     );
 };
