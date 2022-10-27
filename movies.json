@@ -1,53 +1,18 @@
 {
   "movies": [
     {
-      "id": 1,
-      "title": "Terminator",
-      "year": 2017,
-      "rating": 7.8,
-      "genre": "sci-fiction"
-    },
-    {
-      "title": "Jurassic",
-      "year": "2022",
-      "rating": "9",
-      "genre": "action",
-      "id": 2
-    },
-    {
-      "title": "Jurassic",
-      "year": "2022",
-      "rating": "9",
-      "genre": "action",
-      "id": 3
-    },
-    {
-      "title": "Star Wars",
-      "year": "2019",
-      "rating": "10",
-      "genre": "sci-fiction",
+      "title": "test",
+      "year": "123",
+      "rating": "123",
+      "genre": "test",
       "id": 4
     },
     {
-      "title": "fasdfa",
-      "year": "2132",
-      "rating": "1321",
-      "genre": "fdsfa",
+      "title": "test",
+      "year": "123",
+      "rating": "123",
+      "genre": "test",
       "id": 5
-    },
-    {
-      "title": "fdsafdas",
-      "year": "131232",
-      "rating": "32131",
-      "genre": "fsadfas",
-      "id": 6
-    },
-    {
-      "title": "fdsafdas",
-      "year": "131232",
-      "rating": "32131",
-      "genre": "fsadfas",
-      "id": 7
     }
   ]
 }
