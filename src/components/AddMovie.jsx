@@ -10,7 +10,7 @@ const AddMovie = (props) => {
     const handleSubmit = (evt) => {
         evt.preventDefault();
         console.log(newMovie);
-        fetch('http://localhost:3000/movies', {
+        fetch('http://localhost:4000/movies', {
             method: 'POST', // or 'PUT'
             headers: {
                 'Content-Type': 'application/json',
